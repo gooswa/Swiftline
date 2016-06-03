@@ -15,30 +15,30 @@ class CommandExecutor {
   
   static var currentTaskExecutor: TaskExecutor = ActualTaskExecutor()
   
-  class func execute(commandParts: [String]) -> ExecutorReturnValue {
+  class func execute(_ commandParts: [String]) -> ExecutorReturnValue {
     return currentTaskExecutor.execute(commandParts)
   }
 }
 
 
 protocol TaskExecutor {
-  func execute(commandParts: [String]) -> ExecutorReturnValue
+  func execute(_ commandParts: [String]) -> ExecutorReturnValue
 }
 
 class DryTaskExecutor: TaskExecutor {
   
-  func execute(commandParts: [String]) -> ExecutorReturnValue {
-    let command = commandParts.joinWithSeparator(" ")
+  func execute(_ commandParts: [String]) -> ExecutorReturnValue {
+    let command = commandParts.joined(separator: " ")
     PromptSettings.print("Executed command '\(command)'")
     return (0,
-      Dryipe(dataToReturn: "".dataUsingEncoding(NSUTF8StringEncoding)!),
-      Dryipe(dataToReturn: "".dataUsingEncoding(NSUTF8StringEncoding)!))
+      Dryipe(dataToReturn: "".data(using: NSUTF8StringEncoding)!),
+      Dryipe(dataToReturn: "".data(using: NSUTF8StringEncoding)!))
   }
 }
 
 class ActualTaskExecutor: TaskExecutor {
   
-  func execute(commandParts: [String]) -> ExecutorReturnValue  {
+  func execute(_ commandParts: [String]) -> ExecutorReturnValue  {
     let task = NSTask()
 
     task.launchPath = "/usr/bin/env"
@@ -58,10 +58,10 @@ class ActualTaskExecutor: TaskExecutor {
 
 class InteractiveTaskExecutor: TaskExecutor {
   
-  func execute(commandParts: [String]) -> ExecutorReturnValue  {
-    let result = system(commandParts.joinWithSeparator(" "))
+  func execute(_ commandParts: [String]) -> ExecutorReturnValue  {
+    let result = system(commandParts.joined(separator: " "))
     
-    let emptyPipe = Dryipe(dataToReturn: "".dataUsingEncoding(NSUTF8StringEncoding)!)
+    let emptyPipe = Dryipe(dataToReturn: "".data(using: NSUTF8StringEncoding)!)
     return (Int(result), emptyPipe, emptyPipe)
   }
 }
@@ -80,12 +80,12 @@ class DummyTaskExecutor: TaskExecutor {
     errorToReturn = error
   }
   
-  func execute(commandParts: [String]) -> ExecutorReturnValue {
-    let command = commandParts.joinWithSeparator(" ")
+  func execute(_ commandParts: [String]) -> ExecutorReturnValue {
+    let command = commandParts.joined(separator: " ")
     commandsExecuted.append(command)
     
     return (statusCodeToReturn,
-      Dryipe(dataToReturn: outputToReturn.dataUsingEncoding(NSUTF8StringEncoding)!),
-      Dryipe(dataToReturn: errorToReturn.dataUsingEncoding(NSUTF8StringEncoding)!))
+            Dryipe(dataToReturn: outputToReturn.data(using: NSUTF8StringEncoding)!),
+      Dryipe(dataToReturn: errorToReturn.data(using: NSUTF8StringEncoding)!))
   }
 }

@@ -8,29 +8,29 @@
 
 
 protocol AskerValidator {
-    associatedtype Item
-    
-    func invalidItemMessage(string: String?) -> String?
-    func newItemPromptMessage() -> String
-    
-    func validatedItem(forString string: String) -> Item
+  associatedtype Item
+  
+  func invalidItemMessage(_ string: String?) -> String?
+  func newItemPromptMessage() -> String
+  
+  func validatedItem(forString string: String) -> Item
 }
 
 func askForValidatedItem<T, W: AskerValidator where W.Item == T>
-    (originalValue value: String, validator: W) -> T {
-    
-    var validatedValue: String = value
-        
-    while true {
-        guard let invalidMessage = validator.invalidItemMessage(validatedValue) else {
-            break
-        }
-        
-        PromptSettings.print(invalidMessage)
-        PromptSettings.print(validator.newItemPromptMessage(), terminator: "")
-        
-        validatedValue = readStringOrEmpty()
+  (originalValue value: String, validator: W) -> T {
+  
+  var validatedValue: String = value
+  
+  while true {
+    guard let invalidMessage = validator.invalidItemMessage(validatedValue) else {
+      break
     }
     
-    return validator.validatedItem(forString: validatedValue)
+    PromptSettings.print(invalidMessage)
+    PromptSettings.print(validator.newItemPromptMessage(), terminator: "")
+    
+    validatedValue = readStringOrEmpty()
+  }
+  
+  return validator.validatedItem(forString: validatedValue)
 }

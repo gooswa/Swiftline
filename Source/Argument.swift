@@ -82,13 +82,32 @@ struct Argument {
 
 extension String {
   public subscript (range: Range<Int>) -> String {
-    let length = self.lengthOfBytesUsingEncoding(NSUTF8StringEncoding)
+    let length = self.lengthOfBytes(using: NSUTF8StringEncoding)
     
-    var distanceFromEndIndex = length - range.endIndex
+    var distanceFromEndIndex = length - range.upperBound
     if distanceFromEndIndex < 0 {
       distanceFromEndIndex = 0
     }
     
-    return self[startIndex.advancedBy(range.startIndex) ..< endIndex.advancedBy(-distanceFromEndIndex)]
+    let start = self.index(self.startIndex, offsetBy: range.lowerBound)
+    let end = self.index(self.endIndex, offsetBy: -distanceFromEndIndex)
+    
+    let actualRange: Range = start..<end
+    
+    return String(self[actualRange])
+  }
+  
+  public subscript (startOffset startOffset: Int, endOffset endOffset: Int) -> String {
+    let rangeWithInset: Range = (self.index(self.startIndex, offsetBy: startOffset))..<(self.index(self.endIndex, offsetBy: -endOffset))
+    return String(self[rangeWithInset])
+  }
+  
+  func replacingOccurrences(of: String, with: String) -> String {
+    return replacingOccurrences(of: of, with: with, options: .literalSearch, range: self.startIndex..<self.endIndex)
+  }
+  
+  func replacingOccurrences(of: String, with: String, startOffset: Int, endOffset: Int) -> String {
+    let range = self.index(self.startIndex, offsetBy: startOffset)..<self.index(self.endIndex, offsetBy: -endOffset)
+    return replacingOccurrences(of: of, with: with, options: .literalSearch, range: range)
   }
 }

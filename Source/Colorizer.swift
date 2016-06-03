@@ -54,6 +54,6 @@ class Colorizer: CustomStringConvertible {
     }
     
     var description: String {
-        return color.colorize(string: string)
+        return color.colorize(string)
     }
 }

@@ -1,0 +1,462 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		_LinkFileRef_Swiftline_via_SwiftlineTestSuite /* Swiftline.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_Swiftline" /* Swiftline.framework */; };
+		__src_cc_ref_Source/Agree.swift /* Agree.swift in Sources */ = {isa = PBXBuildFile; fileRef = __PBXFileRef_Source/Agree.swift /* Agree.swift */; };
+		__src_cc_ref_Source/AgreeSettings.swift /* AgreeSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = __PBXFileRef_Source/AgreeSettings.swift /* AgreeSettings.swift */; };
+		__src_cc_ref_Source/ArgConvertible.swift /* ArgConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = __PBXFileRef_Source/ArgConvertible.swift /* ArgConvertible.swift */; };
+		__src_cc_ref_Source/Args.swift /* Args.swift in Sources */ = {isa = PBXBuildFile; fileRef = __PBXFileRef_Source/Args.swift /* Args.swift */; };
+		__src_cc_ref_Source/ArgsParser.swift /* ArgsParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = __PBXFileRef_Source/ArgsParser.swift /* ArgsParser.swift */; };
+		__src_cc_ref_Source/Argument.swift /* Argument.swift in Sources */ = {isa = PBXBuildFile; fileRef = __PBXFileRef_Source/Argument.swift /* Argument.swift */; };
+		__src_cc_ref_Source/Ask.swift /* Ask.swift in Sources */ = {isa = PBXBuildFile; fileRef = __PBXFileRef_Source/Ask.swift /* Ask.swift */; };
+		__src_cc_ref_Source/AskSettings.swift /* AskSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = __PBXFileRef_Source/AskSettings.swift /* AskSettings.swift */; };
+		__src_cc_ref_Source/AskerValidator.swift /* AskerValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = __PBXFileRef_Source/AskerValidator.swift /* AskerValidator.swift */; };
+		__src_cc_ref_Source/Choose.swift /* Choose.swift in Sources */ = {isa = PBXBuildFile; fileRef = __PBXFileRef_Source/Choose.swift /* Choose.swift */; };
+		__src_cc_ref_Source/ChooseSettings.swift /* ChooseSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = __PBXFileRef_Source/ChooseSettings.swift /* ChooseSettings.swift */; };
+		__src_cc_ref_Source/Colorizer.swift /* Colorizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = __PBXFileRef_Source/Colorizer.swift /* Colorizer.swift */; };
+		__src_cc_ref_Source/CommandExecutor.swift /* CommandExecutor.swift in Sources */ = {isa = PBXBuildFile; fileRef = __PBXFileRef_Source/CommandExecutor.swift /* CommandExecutor.swift */; };
+		__src_cc_ref_Source/Env.swift /* Env.swift in Sources */ = {isa = PBXBuildFile; fileRef = __PBXFileRef_Source/Env.swift /* Env.swift */; };
+		__src_cc_ref_Source/Glob.swift /* Glob.swift in Sources */ = {isa = PBXBuildFile; fileRef = __PBXFileRef_Source/Glob.swift /* Glob.swift */; };
+		__src_cc_ref_Source/ProcessInfo.swift /* ProcessInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = __PBXFileRef_Source/ProcessInfo.swift /* ProcessInfo.swift */; };
+		__src_cc_ref_Source/PromptPrinter.swift /* PromptPrinter.swift in Sources */ = {isa = PBXBuildFile; fileRef = __PBXFileRef_Source/PromptPrinter.swift /* PromptPrinter.swift */; };
+		__src_cc_ref_Source/PromptReader.swift /* PromptReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = __PBXFileRef_Source/PromptReader.swift /* PromptReader.swift */; };
+		__src_cc_ref_Source/PromptSettings.swift /* PromptSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = __PBXFileRef_Source/PromptSettings.swift /* PromptSettings.swift */; };
+		__src_cc_ref_Source/RunResults.swift /* RunResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = __PBXFileRef_Source/RunResults.swift /* RunResults.swift */; };
+		__src_cc_ref_Source/Runner.swift /* Runner.swift in Sources */ = {isa = PBXBuildFile; fileRef = __PBXFileRef_Source/Runner.swift /* Runner.swift */; };
+		__src_cc_ref_Source/RunnerSettings.swift /* RunnerSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = __PBXFileRef_Source/RunnerSettings.swift /* RunnerSettings.swift */; };
+		__src_cc_ref_Source/ShortHandRunner.swift /* ShortHandRunner.swift in Sources */ = {isa = PBXBuildFile; fileRef = __PBXFileRef_Source/ShortHandRunner.swift /* ShortHandRunner.swift */; };
+		__src_cc_ref_Source/StringBackgroundColorizer.swift /* StringBackgroundColorizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = __PBXFileRef_Source/StringBackgroundColorizer.swift /* StringBackgroundColorizer.swift */; };
+		__src_cc_ref_Source/StringForegroundColorizer.swift /* StringForegroundColorizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = __PBXFileRef_Source/StringForegroundColorizer.swift /* StringForegroundColorizer.swift */; };
+		__src_cc_ref_Source/StringStyle.swift /* StringStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = __PBXFileRef_Source/StringStyle.swift /* StringStyle.swift */; };
+		__src_cc_ref_Source/StringStyleColorizer.swift /* StringStyleColorizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = __PBXFileRef_Source/StringStyleColorizer.swift /* StringStyleColorizer.swift */; };
+		__src_cc_ref_Source/TaskPipe.swift /* TaskPipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = __PBXFileRef_Source/TaskPipe.swift /* TaskPipe.swift */; };
+		__src_cc_ref_Tests/Swiftline/AgreeSettingsTest.swift /* AgreeSettingsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = __PBXFileRef_Tests/Swiftline/AgreeSettingsTest.swift /* AgreeSettingsTest.swift */; };
+		__src_cc_ref_Tests/Swiftline/AgreeTests.swift /* AgreeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = __PBXFileRef_Tests/Swiftline/AgreeTests.swift /* AgreeTests.swift */; };
+		__src_cc_ref_Tests/Swiftline/ArgsTests.swift /* ArgsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = __PBXFileRef_Tests/Swiftline/ArgsTests.swift /* ArgsTests.swift */; };
+		__src_cc_ref_Tests/Swiftline/AskSettingsTests.swift /* AskSettingsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = __PBXFileRef_Tests/Swiftline/AskSettingsTests.swift /* AskSettingsTests.swift */; };
+		__src_cc_ref_Tests/Swiftline/AskTests.swift /* AskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = __PBXFileRef_Tests/Swiftline/AskTests.swift /* AskTests.swift */; };
+		__src_cc_ref_Tests/Swiftline/ChooseSettingsTests.swift /* ChooseSettingsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = __PBXFileRef_Tests/Swiftline/ChooseSettingsTests.swift /* ChooseSettingsTests.swift */; };
+		__src_cc_ref_Tests/Swiftline/ChooseTests.swift /* ChooseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = __PBXFileRef_Tests/Swiftline/ChooseTests.swift /* ChooseTests.swift */; };
+		__src_cc_ref_Tests/Swiftline/ColorizerTest.swift /* ColorizerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = __PBXFileRef_Tests/Swiftline/ColorizerTest.swift /* ColorizerTest.swift */; };
+		__src_cc_ref_Tests/Swiftline/ENVTests.swift /* ENVTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = __PBXFileRef_Tests/Swiftline/ENVTests.swift /* ENVTests.swift */; };
+		__src_cc_ref_Tests/Swiftline/GlobTests.swift /* GlobTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = __PBXFileRef_Tests/Swiftline/GlobTests.swift /* GlobTests.swift */; };
+		__src_cc_ref_Tests/Swiftline/RunnerTests.swift /* RunnerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = __PBXFileRef_Tests/Swiftline/RunnerTests.swift /* RunnerTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D73E89ED1D0102E600986E53 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = __RootObject_ /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "______Target_Swiftline";
+			remoteInfo = Swiftline;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		__PBXFileRef_Package.swift /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		__PBXFileRef_Source/Agree.swift /* Agree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Agree.swift; sourceTree = "<group>"; };
+		__PBXFileRef_Source/AgreeSettings.swift /* AgreeSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgreeSettings.swift; sourceTree = "<group>"; };
+		__PBXFileRef_Source/ArgConvertible.swift /* ArgConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArgConvertible.swift; sourceTree = "<group>"; };
+		__PBXFileRef_Source/Args.swift /* Args.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Args.swift; sourceTree = "<group>"; };
+		__PBXFileRef_Source/ArgsParser.swift /* ArgsParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArgsParser.swift; sourceTree = "<group>"; };
+		__PBXFileRef_Source/Argument.swift /* Argument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Argument.swift; sourceTree = "<group>"; };
+		__PBXFileRef_Source/Ask.swift /* Ask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ask.swift; sourceTree = "<group>"; };
+		__PBXFileRef_Source/AskSettings.swift /* AskSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskSettings.swift; sourceTree = "<group>"; };
+		__PBXFileRef_Source/AskerValidator.swift /* AskerValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskerValidator.swift; sourceTree = "<group>"; };
+		__PBXFileRef_Source/Choose.swift /* Choose.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Choose.swift; sourceTree = "<group>"; };
+		__PBXFileRef_Source/ChooseSettings.swift /* ChooseSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseSettings.swift; sourceTree = "<group>"; };
+		__PBXFileRef_Source/Colorizer.swift /* Colorizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colorizer.swift; sourceTree = "<group>"; };
+		__PBXFileRef_Source/CommandExecutor.swift /* CommandExecutor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandExecutor.swift; sourceTree = "<group>"; };
+		__PBXFileRef_Source/Env.swift /* Env.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Env.swift; sourceTree = "<group>"; };
+		__PBXFileRef_Source/Glob.swift /* Glob.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Glob.swift; sourceTree = "<group>"; };
+		__PBXFileRef_Source/ProcessInfo.swift /* ProcessInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessInfo.swift; sourceTree = "<group>"; };
+		__PBXFileRef_Source/PromptPrinter.swift /* PromptPrinter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromptPrinter.swift; sourceTree = "<group>"; };
+		__PBXFileRef_Source/PromptReader.swift /* PromptReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromptReader.swift; sourceTree = "<group>"; };
+		__PBXFileRef_Source/PromptSettings.swift /* PromptSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromptSettings.swift; sourceTree = "<group>"; };
+		__PBXFileRef_Source/RunResults.swift /* RunResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunResults.swift; sourceTree = "<group>"; };
+		__PBXFileRef_Source/Runner.swift /* Runner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Runner.swift; sourceTree = "<group>"; };
+		__PBXFileRef_Source/RunnerSettings.swift /* RunnerSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunnerSettings.swift; sourceTree = "<group>"; };
+		__PBXFileRef_Source/ShortHandRunner.swift /* ShortHandRunner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortHandRunner.swift; sourceTree = "<group>"; };
+		__PBXFileRef_Source/StringBackgroundColorizer.swift /* StringBackgroundColorizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringBackgroundColorizer.swift; sourceTree = "<group>"; };
+		__PBXFileRef_Source/StringForegroundColorizer.swift /* StringForegroundColorizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringForegroundColorizer.swift; sourceTree = "<group>"; };
+		__PBXFileRef_Source/StringStyle.swift /* StringStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringStyle.swift; sourceTree = "<group>"; };
+		__PBXFileRef_Source/StringStyleColorizer.swift /* StringStyleColorizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringStyleColorizer.swift; sourceTree = "<group>"; };
+		__PBXFileRef_Source/TaskPipe.swift /* TaskPipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskPipe.swift; sourceTree = "<group>"; };
+		__PBXFileRef_Swiftline.xcodeproj/Configs/Project.xcconfig /* Project.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = Project.xcconfig; path = Swiftline.xcodeproj/Configs/Project.xcconfig; sourceTree = "<group>"; };
+		__PBXFileRef_SwiftlineTestSuite_Info.plist /* SwiftlineTestSuite_Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = SwiftlineTestSuite_Info.plist; path = Swiftline.xcodeproj/SwiftlineTestSuite_Info.plist; sourceTree = SOURCE_ROOT; };
+		__PBXFileRef_Swiftline_Info.plist /* Swiftline_Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Swiftline_Info.plist; path = Swiftline.xcodeproj/Swiftline_Info.plist; sourceTree = SOURCE_ROOT; };
+		__PBXFileRef_Tests/Swiftline/AgreeSettingsTest.swift /* AgreeSettingsTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgreeSettingsTest.swift; sourceTree = "<group>"; };
+		__PBXFileRef_Tests/Swiftline/AgreeTests.swift /* AgreeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgreeTests.swift; sourceTree = "<group>"; };
+		__PBXFileRef_Tests/Swiftline/ArgsTests.swift /* ArgsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArgsTests.swift; sourceTree = "<group>"; };
+		__PBXFileRef_Tests/Swiftline/AskSettingsTests.swift /* AskSettingsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskSettingsTests.swift; sourceTree = "<group>"; };
+		__PBXFileRef_Tests/Swiftline/AskTests.swift /* AskTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskTests.swift; sourceTree = "<group>"; };
+		__PBXFileRef_Tests/Swiftline/ChooseSettingsTests.swift /* ChooseSettingsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseSettingsTests.swift; sourceTree = "<group>"; };
+		__PBXFileRef_Tests/Swiftline/ChooseTests.swift /* ChooseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseTests.swift; sourceTree = "<group>"; };
+		__PBXFileRef_Tests/Swiftline/ColorizerTest.swift /* ColorizerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorizerTest.swift; sourceTree = "<group>"; };
+		__PBXFileRef_Tests/Swiftline/ENVTests.swift /* ENVTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ENVTests.swift; sourceTree = "<group>"; };
+		__PBXFileRef_Tests/Swiftline/GlobTests.swift /* GlobTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobTests.swift; sourceTree = "<group>"; };
+		__PBXFileRef_Tests/Swiftline/RunnerTests.swift /* RunnerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunnerTests.swift; sourceTree = "<group>"; };
+		"_____Product_Swiftline" /* Swiftline.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Swiftline.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"_____Product_SwiftlineTestSuite" /* SwiftlineTestSuite.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = SwiftlineTestSuite.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		"___LinkPhase_Swiftline" /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		"___LinkPhase_SwiftlineTestSuite" /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				_LinkFileRef_Swiftline_via_SwiftlineTestSuite /* Swiftline.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		TestProducts_ /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				"_____Product_SwiftlineTestSuite" /* SwiftlineTestSuite.xctest */,
+			);
+			name = Tests;
+			sourceTree = "<group>";
+		};
+		"___RootGroup_" = {
+			isa = PBXGroup;
+			children = (
+				__PBXFileRef_Package.swift /* Package.swift */,
+				"_____Configs_" /* Configs */,
+				"_____Sources_" /* Sources */,
+				"_______Tests_" /* Tests */,
+				"____Products_" /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		"____Products_" /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				TestProducts_ /* Tests */,
+				"_____Product_Swiftline" /* Swiftline.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		"_____Configs_" /* Configs */ = {
+			isa = PBXGroup;
+			children = (
+				__PBXFileRef_Swiftline.xcodeproj/Configs/Project.xcconfig /* Project.xcconfig */,
+			);
+			name = Configs;
+			sourceTree = "<group>";
+		};
+		"_____Sources_" /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				"_______Group_Swiftline" /* Swiftline */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		"_______Group_Swiftline" /* Swiftline */ = {
+			isa = PBXGroup;
+			children = (
+				__PBXFileRef_Source/Agree.swift /* Agree.swift */,
+				__PBXFileRef_Source/AgreeSettings.swift /* AgreeSettings.swift */,
+				__PBXFileRef_Source/ArgConvertible.swift /* ArgConvertible.swift */,
+				__PBXFileRef_Source/Args.swift /* Args.swift */,
+				__PBXFileRef_Source/ArgsParser.swift /* ArgsParser.swift */,
+				__PBXFileRef_Source/Argument.swift /* Argument.swift */,
+				__PBXFileRef_Source/Ask.swift /* Ask.swift */,
+				__PBXFileRef_Source/AskerValidator.swift /* AskerValidator.swift */,
+				__PBXFileRef_Source/AskSettings.swift /* AskSettings.swift */,
+				__PBXFileRef_Source/Choose.swift /* Choose.swift */,
+				__PBXFileRef_Source/ChooseSettings.swift /* ChooseSettings.swift */,
+				__PBXFileRef_Source/Colorizer.swift /* Colorizer.swift */,
+				__PBXFileRef_Source/CommandExecutor.swift /* CommandExecutor.swift */,
+				__PBXFileRef_Source/Env.swift /* Env.swift */,
+				__PBXFileRef_Source/Glob.swift /* Glob.swift */,
+				__PBXFileRef_Source/ProcessInfo.swift /* ProcessInfo.swift */,
+				__PBXFileRef_Source/PromptPrinter.swift /* PromptPrinter.swift */,
+				__PBXFileRef_Source/PromptReader.swift /* PromptReader.swift */,
+				__PBXFileRef_Source/PromptSettings.swift /* PromptSettings.swift */,
+				__PBXFileRef_Source/Runner.swift /* Runner.swift */,
+				__PBXFileRef_Source/RunnerSettings.swift /* RunnerSettings.swift */,
+				__PBXFileRef_Source/RunResults.swift /* RunResults.swift */,
+				__PBXFileRef_Source/ShortHandRunner.swift /* ShortHandRunner.swift */,
+				__PBXFileRef_Source/StringBackgroundColorizer.swift /* StringBackgroundColorizer.swift */,
+				__PBXFileRef_Source/StringForegroundColorizer.swift /* StringForegroundColorizer.swift */,
+				__PBXFileRef_Source/StringStyle.swift /* StringStyle.swift */,
+				__PBXFileRef_Source/StringStyleColorizer.swift /* StringStyleColorizer.swift */,
+				__PBXFileRef_Source/TaskPipe.swift /* TaskPipe.swift */,
+				__PBXFileRef_Swiftline_Info.plist /* Swiftline_Info.plist */,
+			);
+			name = Swiftline;
+			path = Source;
+			sourceTree = "<group>";
+		};
+		"_______Group_SwiftlineTestSuite" /* SwiftlineTestSuite */ = {
+			isa = PBXGroup;
+			children = (
+				__PBXFileRef_Tests/Swiftline/AgreeSettingsTest.swift /* AgreeSettingsTest.swift */,
+				__PBXFileRef_Tests/Swiftline/AgreeTests.swift /* AgreeTests.swift */,
+				__PBXFileRef_Tests/Swiftline/ArgsTests.swift /* ArgsTests.swift */,
+				__PBXFileRef_Tests/Swiftline/AskSettingsTests.swift /* AskSettingsTests.swift */,
+				__PBXFileRef_Tests/Swiftline/AskTests.swift /* AskTests.swift */,
+				__PBXFileRef_Tests/Swiftline/ChooseSettingsTests.swift /* ChooseSettingsTests.swift */,
+				__PBXFileRef_Tests/Swiftline/ChooseTests.swift /* ChooseTests.swift */,
+				__PBXFileRef_Tests/Swiftline/ColorizerTest.swift /* ColorizerTest.swift */,
+				__PBXFileRef_Tests/Swiftline/ENVTests.swift /* ENVTests.swift */,
+				__PBXFileRef_Tests/Swiftline/GlobTests.swift /* GlobTests.swift */,
+				__PBXFileRef_Tests/Swiftline/RunnerTests.swift /* RunnerTests.swift */,
+				__PBXFileRef_SwiftlineTestSuite_Info.plist /* SwiftlineTestSuite_Info.plist */,
+			);
+			name = SwiftlineTestSuite;
+			path = Tests/Swiftline;
+			sourceTree = "<group>";
+		};
+		"_______Tests_" /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				"_______Group_SwiftlineTestSuite" /* SwiftlineTestSuite */,
+			);
+			name = Tests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		"______Target_Swiftline" /* Swiftline */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = "_______Confs_Swiftline" /* Build configuration list for PBXNativeTarget "Swiftline" */;
+			buildPhases = (
+				CompilePhase_Swiftline /* Sources */,
+				"___LinkPhase_Swiftline" /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Swiftline;
+			productName = Swiftline;
+			productReference = "_____Product_Swiftline" /* Swiftline.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"______Target_SwiftlineTestSuite" /* SwiftlineTestSuite */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = "_______Confs_SwiftlineTestSuite" /* Build configuration list for PBXNativeTarget "SwiftlineTestSuite" */;
+			buildPhases = (
+				CompilePhase_SwiftlineTestSuite /* Sources */,
+				"___LinkPhase_SwiftlineTestSuite" /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				__Dependency_Swiftline /* PBXTargetDependency */,
+			);
+			name = SwiftlineTestSuite;
+			productName = SwiftlineTestSuite;
+			productReference = "_____Product_SwiftlineTestSuite" /* SwiftlineTestSuite.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		__RootObject_ /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 9999;
+			};
+			buildConfigurationList = "___RootConfs_" /* Build configuration list for PBXProject "Swiftline" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = "___RootGroup_";
+			productRefGroup = "____Products_" /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				"______Target_Swiftline" /* Swiftline */,
+				"______Target_SwiftlineTestSuite" /* SwiftlineTestSuite */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CompilePhase_Swiftline /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				__src_cc_ref_Source/Agree.swift /* Agree.swift in Sources */,
+				__src_cc_ref_Source/AgreeSettings.swift /* AgreeSettings.swift in Sources */,
+				__src_cc_ref_Source/ArgConvertible.swift /* ArgConvertible.swift in Sources */,
+				__src_cc_ref_Source/Args.swift /* Args.swift in Sources */,
+				__src_cc_ref_Source/ArgsParser.swift /* ArgsParser.swift in Sources */,
+				__src_cc_ref_Source/Argument.swift /* Argument.swift in Sources */,
+				__src_cc_ref_Source/Ask.swift /* Ask.swift in Sources */,
+				__src_cc_ref_Source/AskerValidator.swift /* AskerValidator.swift in Sources */,
+				__src_cc_ref_Source/AskSettings.swift /* AskSettings.swift in Sources */,
+				__src_cc_ref_Source/Choose.swift /* Choose.swift in Sources */,
+				__src_cc_ref_Source/ChooseSettings.swift /* ChooseSettings.swift in Sources */,
+				__src_cc_ref_Source/Colorizer.swift /* Colorizer.swift in Sources */,
+				__src_cc_ref_Source/CommandExecutor.swift /* CommandExecutor.swift in Sources */,
+				__src_cc_ref_Source/Env.swift /* Env.swift in Sources */,
+				__src_cc_ref_Source/Glob.swift /* Glob.swift in Sources */,
+				__src_cc_ref_Source/ProcessInfo.swift /* ProcessInfo.swift in Sources */,
+				__src_cc_ref_Source/PromptPrinter.swift /* PromptPrinter.swift in Sources */,
+				__src_cc_ref_Source/PromptReader.swift /* PromptReader.swift in Sources */,
+				__src_cc_ref_Source/PromptSettings.swift /* PromptSettings.swift in Sources */,
+				__src_cc_ref_Source/Runner.swift /* Runner.swift in Sources */,
+				__src_cc_ref_Source/RunnerSettings.swift /* RunnerSettings.swift in Sources */,
+				__src_cc_ref_Source/RunResults.swift /* RunResults.swift in Sources */,
+				__src_cc_ref_Source/ShortHandRunner.swift /* ShortHandRunner.swift in Sources */,
+				__src_cc_ref_Source/StringBackgroundColorizer.swift /* StringBackgroundColorizer.swift in Sources */,
+				__src_cc_ref_Source/StringForegroundColorizer.swift /* StringForegroundColorizer.swift in Sources */,
+				__src_cc_ref_Source/StringStyle.swift /* StringStyle.swift in Sources */,
+				__src_cc_ref_Source/StringStyleColorizer.swift /* StringStyleColorizer.swift in Sources */,
+				__src_cc_ref_Source/TaskPipe.swift /* TaskPipe.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CompilePhase_SwiftlineTestSuite /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				__src_cc_ref_Tests/Swiftline/AgreeSettingsTest.swift /* AgreeSettingsTest.swift in Sources */,
+				__src_cc_ref_Tests/Swiftline/AgreeTests.swift /* AgreeTests.swift in Sources */,
+				__src_cc_ref_Tests/Swiftline/ArgsTests.swift /* ArgsTests.swift in Sources */,
+				__src_cc_ref_Tests/Swiftline/AskSettingsTests.swift /* AskSettingsTests.swift in Sources */,
+				__src_cc_ref_Tests/Swiftline/AskTests.swift /* AskTests.swift in Sources */,
+				__src_cc_ref_Tests/Swiftline/ChooseSettingsTests.swift /* ChooseSettingsTests.swift in Sources */,
+				__src_cc_ref_Tests/Swiftline/ChooseTests.swift /* ChooseTests.swift in Sources */,
+				__src_cc_ref_Tests/Swiftline/ColorizerTest.swift /* ColorizerTest.swift in Sources */,
+				__src_cc_ref_Tests/Swiftline/ENVTests.swift /* ENVTests.swift in Sources */,
+				__src_cc_ref_Tests/Swiftline/GlobTests.swift /* GlobTests.swift in Sources */,
+				__src_cc_ref_Tests/Swiftline/RunnerTests.swift /* RunnerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		__Dependency_Swiftline /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "______Target_Swiftline" /* Swiftline */;
+			targetProxy = D73E89ED1D0102E600986E53 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		_ReleaseConf_Swiftline /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				INFOPLIST_FILE = Swiftline.xcodeproj/Swiftline_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+			};
+			name = Release;
+		};
+		_ReleaseConf_SwiftlineTestSuite /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = Swiftline.xcodeproj/SwiftlineTestSuite_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+			};
+			name = Release;
+		};
+		"___DebugConf_Swiftline" /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				INFOPLIST_FILE = Swiftline.xcodeproj/Swiftline_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		"___DebugConf_SwiftlineTestSuite" /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = Swiftline.xcodeproj/SwiftlineTestSuite_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		"_____Release_" /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = __PBXFileRef_Swiftline.xcodeproj/Configs/Project.xcconfig /* Project.xcconfig */;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		"_______Debug_" /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = __PBXFileRef_Swiftline.xcodeproj/Configs/Project.xcconfig /* Project.xcconfig */;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		"___RootConfs_" /* Build configuration list for PBXProject "Swiftline" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				"_______Debug_" /* Debug */,
+				"_____Release_" /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		"_______Confs_Swiftline" /* Build configuration list for PBXNativeTarget "Swiftline" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				"___DebugConf_Swiftline" /* Debug */,
+				_ReleaseConf_Swiftline /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		"_______Confs_SwiftlineTestSuite" /* Build configuration list for PBXNativeTarget "SwiftlineTestSuite" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				"___DebugConf_SwiftlineTestSuite" /* Debug */,
+				_ReleaseConf_SwiftlineTestSuite /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = __RootObject_ /* Project object */;
+}

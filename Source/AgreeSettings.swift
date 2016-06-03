@@ -8,34 +8,34 @@
 
 
 class AgreeSettings: AskerValidator {
-    
-    let positiveValues = ["Yes", "yes", "Y", "y"]
-    let negativeValues = ["No", "no", "N", "n"]
-    
-    let prompt: String
-    
-    init(prompt: String) {
-        self.prompt = prompt
+  
+  let positiveValues = ["Yes", "yes", "Y", "y"]
+  let negativeValues = ["No", "no", "N", "n"]
+  
+  let prompt: String
+  
+  init(prompt: String) {
+    self.prompt = prompt
+  }
+  
+  func validatedItem(forString string: String) -> String {
+    return string
+  }
+  
+  func invalidItemMessage(_ string: String?) -> String? {
+    if let message = string where positiveValues.contains(message) || negativeValues.contains(message) {
+      return nil
     }
     
-    func validatedItem(forString string: String) -> String {
-        return string
-    }
-    
-    func invalidItemMessage(string: String?) -> String? {
-        if let message = string where positiveValues.contains(message) || negativeValues.contains(message) {
-            return nil
-        }
-        
-        return "Please enter \"yes\" or \"no\"."
-    }
-    
-    func newItemPromptMessage() -> String {
-        return "\(prompt)  "
-    }
-    
-    func isPositive(item: String) -> Bool {
-        return positiveValues.contains(item)
-    }
-    
+    return "Please enter \"yes\" or \"no\"."
+  }
+  
+  func newItemPromptMessage() -> String {
+    return "\(prompt)  "
+  }
+  
+  func isPositive(_ item: String) -> Bool {
+    return positiveValues.contains(item)
+  }
+  
 }
