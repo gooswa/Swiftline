@@ -59,10 +59,7 @@ class ActualTaskExecutor: TaskExecutor {
 class InteractiveTaskExecutor: TaskExecutor {
   
   func execute(_ commandParts: [String]) -> ExecutorReturnValue  {
-    let result = system(commandParts.joined(separator: " "))
-    
-    let emptyPipe = Dryipe(dataToReturn: "".data(using: String.Encoding.utf8)!)
-    return (Int(result), emptyPipe, emptyPipe)
+    return ActualTaskExecutor().execute(commandParts)
   }
 }
 

@@ -93,7 +93,7 @@ public class ChooseSettings<T> {
     func indexChoices() -> [String] {
         return stringChoices().enumerated().map { itemIndex, string in
 
-            if index == .Numbers {
+            if index == .numbers {
                 return "\(itemIndex + 1)"
             } else {
                 let character = "a".unicodeScalars.first!.value + UInt32(itemIndex)

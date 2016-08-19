@@ -103,11 +103,11 @@ extension String {
   }
   
   func replacingOccurrences(of: String, with: String) -> String {
-    return replacingOccurrences(of: of, with: with, options: .literalSearch, range: self.startIndex..<self.endIndex)
+    return replacingOccurrences(of: of, with: with, options: .literal, range: self.startIndex..<self.endIndex)
   }
   
   func replacingOccurrences(of: String, with: String, startOffset: Int, endOffset: Int) -> String {
     let range = self.index(self.startIndex, offsetBy: startOffset)..<self.index(self.endIndex, offsetBy: -endOffset)
-    return replacingOccurrences(of: of, with: with, options: .literalSearch, range: range)
+    return replacingOccurrences(of: of, with: with, options: .literal, range: range)
   }
 }
