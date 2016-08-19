@@ -14,8 +14,8 @@
  - Numbers: Use numbers as choice index (1. 2. 3.)
  */
 public enum ChoiceIndexType {
-    case Letters
-    case Numbers
+    case letters
+    case numbers
 }
 
 
@@ -30,7 +30,7 @@ public class ChooseSettings<T> {
     public var promptQuestion = ""
     
     /// Choice index used for choose items
-    public var index = ChoiceIndexType.Numbers
+    public var index = ChoiceIndexType.numbers
     
     /// Index suffix used between the index and the item
     public var indexSuffix = ". "

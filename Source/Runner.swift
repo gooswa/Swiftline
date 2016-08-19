@@ -82,8 +82,8 @@ class 🏃{
     private class func execute(_ commandParts: [String], withExecutor executor: TaskExecutor) -> RunResults {
         let (status, stdoutPipe, stderrPipe) = executor.execute(commandParts)
       
-        let stdout = readPipe(stdoutPipe).trimmingCharacters(in: NSCharacterSet.whitespacesAndNewlines())
-        let stderr = readPipe(stderrPipe).trimmingCharacters(in: NSCharacterSet.whitespacesAndNewlines())
+        let stdout = readPipe(stdoutPipe).trimmingCharacters(in: CharacterSet.whitespacesAndNewlines)
+        let stderr = readPipe(stderrPipe).trimmingCharacters(in: CharacterSet.whitespacesAndNewlines)
         return RunResults(exitStatus: status, stdout: stdout, stderr: stderr)
     }
     

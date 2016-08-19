@@ -31,21 +31,21 @@ class DryTaskExecutor: TaskExecutor {
     let command = commandParts.joined(separator: " ")
     PromptSettings.print("Executed command '\(command)'")
     return (0,
-      Dryipe(dataToReturn: "".data(using: NSUTF8StringEncoding)!),
-      Dryipe(dataToReturn: "".data(using: NSUTF8StringEncoding)!))
+      Dryipe(dataToReturn: "".data(using: String.Encoding.utf8)!),
+      Dryipe(dataToReturn: "".data(using: String.Encoding.utf8)!))
   }
 }
 
 class ActualTaskExecutor: TaskExecutor {
   
   func execute(_ commandParts: [String]) -> ExecutorReturnValue  {
-    let task = NSTask()
+    let task = Task()
 
     task.launchPath = "/usr/bin/env"
     task.arguments = commandParts
     
-    let stdoutPipe = NSPipe()
-    let stderrPipe = NSPipe()
+    let stdoutPipe = Pipe()
+    let stderrPipe = Pipe()
     
     task.standardOutput = stdoutPipe
     task.standardError = stderrPipe
@@ -61,7 +61,7 @@ class InteractiveTaskExecutor: TaskExecutor {
   func execute(_ commandParts: [String]) -> ExecutorReturnValue  {
     let result = system(commandParts.joined(separator: " "))
     
-    let emptyPipe = Dryipe(dataToReturn: "".data(using: NSUTF8StringEncoding)!)
+    let emptyPipe = Dryipe(dataToReturn: "".data(using: String.Encoding.utf8)!)
     return (Int(result), emptyPipe, emptyPipe)
   }
 }
@@ -85,7 +85,7 @@ class DummyTaskExecutor: TaskExecutor {
     commandsExecuted.append(command)
     
     return (statusCodeToReturn,
-            Dryipe(dataToReturn: outputToReturn.data(using: NSUTF8StringEncoding)!),
-      Dryipe(dataToReturn: errorToReturn.data(using: NSUTF8StringEncoding)!))
+            Dryipe(dataToReturn: outputToReturn.data(using: String.Encoding.utf8)!),
+      Dryipe(dataToReturn: errorToReturn.data(using: String.Encoding.utf8)!))
   }
 }
