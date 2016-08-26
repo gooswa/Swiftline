@@ -23,7 +23,7 @@ public class Args {
   /// `--` is used to mark the terminatin of the flags
   public static var parsed: ParsedArgs {
     
-    if let result = cachedResults where ProcessInfo.cacheResults {
+    if let result = cachedResults, ProcessInfo.cacheResults {
       return result
     }
     

@@ -33,7 +33,7 @@ class ArgsParser {
         continue
       }
       
-      if let previousArgument = previousArgument where previousArgument.isFlag {
+      if let previousArgument = previousArgument, previousArgument.isFlag {
         updatelastOption(forArray: &options, withValue: argumentString)
       } else {
         others += [argument.name]
